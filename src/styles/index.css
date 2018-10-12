@@ -1,0 +1,125 @@
+@tailwind preflight;
+@tailwind utilities;
+
+/* Your custom CSS here */
+
+body {
+    font-size: 18px;
+    @apply .font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply .font-heading;
+}
+h1 + *,
+h2 + *,
+h3 + *,
+h4 + *,
+h5 + *,
+h6 + *,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+    @apply .mt-4;
+}
+
+p {
+    @apply .font-normal .leading-tight;
+}
+
+ol + p,
+ul + p,
+p + p {
+    @apply .mt-5;
+}
+
+blockquote {
+    
+}
+
+ol li,
+ul li {
+    @apply .leading-normal;
+}
+
+ol li + li,
+ul li + li {
+    @apply .mt-2;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='search'],
+input[type='number'],
+select,
+textarea {
+    display: block;
+    @apply .border-t-2 .border-b-2 .border-r-2 .border-l-2 .border-grey .rounded .mb-2;
+}
+
+label + input,
+label + textarea,
+label + select {
+    @apply .mt-2
+}
+
+
+input[type='checkbox'] + label,
+input[type='radio'] + label {
+    display: inline-block;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    display: none;
+}
+
+@screen sm {
+    body {
+        font-size: 16px
+    }
+    h1 {
+        @apply .text-4xl;
+    }
+    * + h1,
+    h1 + * {
+        @apply .mt-8;
+    }
+    h2 {
+        @apply .text-3xl;
+    }
+    * + h2,
+    h2 + * {
+        @apply .mt-6;
+    }
+    h3 {
+        @apply .text-2xl;
+    }
+    * + h3 ,
+    h3 + * {
+        @apply .mt-5;
+    }
+    h4 {
+        @apply .text-xl;
+    }
+    * + h4,
+    h4 + * {
+        @apply .mt-4;
+    }
+    * + h5,
+    h5 + * {
+        @apply .mt-4;
+    }
+    * + h6,
+    h6 + * {
+        @apply .mt-4;
+    }
+}
