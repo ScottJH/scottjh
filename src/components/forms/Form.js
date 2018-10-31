@@ -30,12 +30,26 @@ class Form extends Component {
 
                 <div className="field-group pt-3 pb-3">
                     <label htmlFor="textarea">Textarea:</label>
-                    <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                    <textarea rows="8" name="textarea" id="textarea"></textarea>
                 </div>
 
+
                 <div className="field-group pt-3 pb-3">
-                    <input type="checkbox" name="checkbox" id="checkbox" />
-                    <label htmlFor="checkbox">Checkbox:</label>
+                    <label>Checkboxes</label>
+                    <ul className="input-group">
+                        <li>
+                            <input type="checkbox" name="test-1" id="checkbox-1" value="1"/>
+                            <label htmlFor="checkbox-1">Item 1</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="test-2" id="checkbox-2" value="2"/>
+                            <label htmlFor="checkbox-2">Item 2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="test-3" id="checkbox-3" value="3"/>
+                            <label htmlFor="checkbox-3">Item 3</label>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className="form__footer">

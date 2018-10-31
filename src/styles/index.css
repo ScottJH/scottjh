@@ -4,8 +4,8 @@
 /* Your custom CSS here */
 
 body {
+    @apply bg-grey;
     font-size: 18px;
-    @apply .font-body;
 }
 
 h1,
@@ -14,8 +14,14 @@ h3,
 h4,
 h5,
 h6 {
-    @apply .font-heading;
+    @apply font-heading text-black tracking-normal;
 }
+h1,
+h2,
+h3 {
+    @apply border-l-4 border-red pl-4;
+}
+
 h1 + *,
 h2 + *,
 h3 + *,
@@ -31,8 +37,10 @@ h6 + *,
     @apply .mt-4;
 }
 
+cite,
+li,
 p {
-    @apply .font-normal .leading-tight;
+    @apply font-normal leading-normal font-body;
 }
 
 ol + p,
@@ -42,7 +50,12 @@ p + p {
 }
 
 blockquote {
-    
+    @apply border-l-4 border-red pl-4;
+    display: block;
+}
+blockquote p {
+    @apply text-lg font-bold mt-4 mb-4;
+
 }
 
 ol li,
@@ -55,22 +68,43 @@ ul li + li {
     @apply .mt-2;
 }
 
+a {
+    @apply text-blue;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover {
+    @apply text-blue-medium;
+}
+
+select {
+    appearance: none;
+}
+
 input[type='text'],
 input[type='email'],
 input[type='search'],
 input[type='number'],
 select,
 textarea {
+    @apply border-t-2 border-b-2 border-r-2 border-l-2 border-grey-dark rounded mb-2 w-full p-4;
     display: block;
-    @apply .border-t-2 .border-b-2 .border-r-2 .border-l-2 .border-grey .rounded .mb-2;
 }
 
 label + input,
 label + textarea,
 label + select {
-    @apply .mt-2
+    @apply mt-2
 }
 
+.input-group {
+    @apply pl-0;
+}
+
+.input-group li {
+    list-style: none;
+}
 
 input[type='checkbox'] + label,
 input[type='radio'] + label {
@@ -82,9 +116,110 @@ input[type='radio'] {
     display: none;
 }
 
+input[type='checkbox'] + label::before {
+    @apply bg-blue mr-4 w-5 h-5 text-blue;
+    transition: color .2s ease;
+    line-height: 1.25rem;
+    text-align: center;
+    content: "\ea10";
+    font-family: 'icomoon';
+    display: inline-block;
+}
+
+input[type='checkbox']:checked + label::before {
+    @apply text-white;
+}
+/* UI */
+
+button,
+.btn,
+input[type='submit'] {
+    @apply font-body bg-blue rounded text-grey pt-2 pb-2 pl-8 pr-8 leading-normal border-2 border-blue;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+
+button + button,
+button + .btn,
+.btn + button,
+.btn + .btn {
+    @apply ml-2;
+}
+
+button:hover,
+.btn:hover,
+input[type='submit']:hover {
+    @apply .bg-blue-dark text-grey border-blue-dark;
+    cursor: pointer;
+}
+
+/* Icons */
+
+.icon {
+    @apply bg-transparent p-4 bg-blue rounded-circle inline-flex text-grey border-2 border-blue;
+    transition: all .2s ease-in-out;
+}
+
+.icon:hover {
+    @apply .bg-blue-dark text-grey border-blue-dark;
+}
+
+.icon + .icon {
+    @apply ml-4;
+}
+
+/* Grid */
+
+.row {
+    @apply flex mx-auto my-0 max-w-lg;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.col {
+    @apply p-4;
+}
+
+/* Dark colors */
+.bg-grey-dark {
+    @apply text-grey;
+}
+
+.bg-grey-dark h1,
+.bg-grey-dark h2,
+.bg-grey-dark h3 {
+    @apply border-blue-light;
+}
+
+.bg-grey-dark a {
+    @apply text-blue-medium;
+}
+
+.bg-grey-dark a:hover {
+    @apply text-blue-light;
+}
+
+.bg-grey-dark blockquote {
+    @apply border-blue-light;
+}
+
+.bg-grey-dark a.btn,
+.bg-grey-dark button,
+.bg-grey-dark input[type='submit'] {
+    @apply bg-transparent text-grey border-grey border-2;
+}
+
+.bg-grey-dark a.btn:hover,
+.bg-grey-dark button:hover,
+.bg-grey-dark input[type='submit']:hover {
+    @apply bg-grey text-grey-dark;
+}
+
+/* Media Queries */
+
 @screen sm {
     body {
-        font-size: 16px
+        font-size: 18px
     }
     h1 {
         @apply .text-4xl;
@@ -122,4 +257,33 @@ input[type='radio'] {
     h6 + * {
         @apply .mt-4;
     }
+}
+
+/* Blocks */
+
+.block-project {
+    @apply text-white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+.block-project::before {
+    background-color: black;
+    opacity: .4;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.block-project__inner {
+    position: relative;
+    z-index: 2;
 }
