@@ -28,7 +28,7 @@ class ImageContent extends Component {
                         </div>
                         <div className="col w-full md:w-1/2 text">
                             <h2>{heading}</h2>
-                            <p>{content}</p>
+                            <div dangerouslySetInnerHTML={{__html: content}} />
                         </div>
                     </div>
                 </div>

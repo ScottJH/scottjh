@@ -11,7 +11,11 @@ class Home extends Component {
                         imageSide="left"
                         image={require('../assets/images/headshot@2x.jpg')}
                         heading="Hello!"
-                        content="My name is Scott J Haselwood. I am a web developer living in Portland, OR. Contact me if you like what you see."
+                        content= {
+                            [
+                                `<p>My name is Scott J Haselwood. I am a web developer living in Portland, OR. I work for <a href="https://thedaylightstudio.com/" target="_blank">Daylight</a>. Contact me if you like what you see.</p>`
+                            ]
+                        }
                     />
                 </div>
             </div>
