@@ -4,7 +4,7 @@
 /* Your custom CSS here */
 
 body {
-    @apply bg-grey;
+    @apply bg-grey text-black;
     font-size: 18px;
 }
 
@@ -14,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-    @apply font-heading text-black tracking-normal;
+    @apply font-heading tracking-normal;
 }
 h1,
 h2,
@@ -79,6 +79,9 @@ a:hover {
 }
 
 select {
+    background-image: url('assets/images/select-down.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) 50%;
     appearance: none;
 }
 
@@ -126,6 +129,19 @@ input[type='checkbox'] + label::before {
     display: inline-block;
 }
 
+input[type='radio'] + label::before {
+    @apply bg-blue mr-4 w-5 h-5 text-blue rounded-circle;
+    transition: background .2s ease;
+    line-height: 1.25rem;
+    text-align: center;
+    content: "\ea54";
+    font-family: 'icomoon';
+    display: inline-block;
+}
+
+input[type='radio']:checked + label::before {
+    @apply bg-white;
+}
 input[type='checkbox']:checked + label::before {
     @apply text-white;
 }
@@ -149,7 +165,7 @@ button + .btn,
 button:hover,
 .btn:hover,
 input[type='submit']:hover {
-    @apply .bg-blue-dark text-grey border-blue-dark;
+    @apply bg-blue-dark text-grey border-blue-dark;
     cursor: pointer;
 }
 
@@ -161,7 +177,7 @@ input[type='submit']:hover {
 }
 
 .icon:hover {
-    @apply .bg-blue-dark text-grey border-blue-dark;
+    @apply bg-blue-dark text-grey border-blue-dark;
 }
 
 .icon + .icon {
@@ -173,7 +189,7 @@ input[type='submit']:hover {
 .row {
     @apply flex mx-auto my-0 max-w-lg;
     flex-flow: row wrap;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .col {
@@ -181,40 +197,151 @@ input[type='submit']:hover {
 }
 
 /* Dark colors */
-.bg-grey-dark {
+.bg-grey-dark,
+.bg-grey-blue {
     @apply text-grey;
 }
 
 .bg-grey-dark h1,
+.bg-grey-blue h1,
 .bg-grey-dark h2,
-.bg-grey-dark h3 {
-    @apply border-blue-light;
+.bg-grey-blue h2,
+.bg-grey-dark h3,
+.bg-grey-blue h3 {
+    @apply border-white;
 }
 
-.bg-grey-dark a {
+.bg-grey-dark a,
+.bg-grey-blue a {
     @apply text-blue-medium;
 }
 
-.bg-grey-dark a:hover {
+.bg-grey-dark a:hover,
+.bg-grey-blue a:hover {
     @apply text-blue-light;
 }
 
-.bg-grey-dark blockquote {
+.bg-grey-dark blockquote,
+.bg-grey-blue blockquote {
     @apply border-blue-light;
 }
 
 .bg-grey-dark a.btn,
+.bg-grey-blue a.btn,
+.bg-grey-dark .icon,
+.bg-grey-blue .icon,
 .bg-grey-dark button,
-.bg-grey-dark input[type='submit'] {
+.bg-grey-blue button,
+.bg-grey-dark input[type='submit'],
+.bg-grey-blue input[type='submit'] {
     @apply bg-transparent text-grey border-grey border-2;
 }
 
 .bg-grey-dark a.btn:hover,
+.bg-grey-blue a.btn:hover,
+.bg-grey-dark .icon:hover,
+.bg-grey-blue .icon:hover,
 .bg-grey-dark button:hover,
-.bg-grey-dark input[type='submit']:hover {
+.bg-grey-blue button:hover,
+.bg-grey-dark input[type='submit']:hover,
+.bg-grey-blue input[type='submit']:hover {
     @apply bg-grey text-grey-dark;
 }
 
+.bg-grey-dark input[type='checkbox'] + label::before,
+.bg-grey-dark input[type='radio'] + label::before,
+.bg-blue-dark input[type='checkbox'] + label::before,
+.bg-blue-dark input[type='radio'] + label::before {
+    @apply bg-blue-light text-blue-light;
+}
+
+.bg-grey-dark input[type='radio']:checked + label::before,
+.bg-blue-dark input[type='radio']:checked + label::before {
+    @apply bg-blue;
+}
+
+.bg-grey-dark input[type='checkbox']:checked + label::before,
+.bg-blue-dark input[type='checkbox']:checked + label::before {
+    @apply text-blue;
+}
+
+.site-header__inner {
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+a.logo {
+    @apply text-white block relative;
+}
+
+a.logo h3 {
+    @apply border-0 p-0;
+}
+a.logo:after {
+    @apply bg-blue-light;
+    position: absolute;
+    transition: all .2s ease;
+    display: block;
+    content: '';
+    /* width: 100%; */
+    height: 2px;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+}
+
+a.logo:hover h3 {
+    @apply border-blue-light;
+}
+
+a.logo:hover::after {
+    right: 0;
+}
+
+.main-nav {
+    @apply mt-0
+}
+
+.site-header nav ul {
+    @apply flex;
+    padding: 0;
+}
+
+.site-header nav ul li {
+    @apply m-0;
+    list-style-type: none;
+}
+
+.site-header nav ul li a {
+    @apply py-1 px-5 text-white block relative;
+}
+
+.site-header nav ul li a:after {
+    @apply bg-blue-light absolute block;
+    transition: all .2s ease;
+    content: '';
+    /* width: 100%; */
+    height: 2px;
+    left: 1.25rem;
+    right: 100%;
+    bottom: 0;
+}
+
+.site-header nav ul li a:hover {
+    @apply text-blue-light;
+}
+
+.site-header nav ul li a:hover::after {
+    right: 1.25rem;
+}
+
+.main-container {
+    min-height: calc(100vh - 113px);
+}
+
+.site-footer {
+    @apply border-t-2 border-white;
+}
 /* Media Queries */
 
 @screen sm {
@@ -270,9 +397,9 @@ input[type='submit']:hover {
     z-index: 0;
 }
 
-.block-project::before {
+/* .block-project::before {
     background-color: black;
-    opacity: .4;
+    opacity: .6;
     content: '';
     display: block;
     position: absolute;
@@ -281,9 +408,43 @@ input[type='submit']:hover {
     right: 0;
     bottom: 0;
     z-index: 1;
-}
+} */
 
 .block-project__inner {
+    @apply  pt-16 pb-16;
     position: relative;
     z-index: 2;
+}
+
+.block-project__inner .col {
+    background-color: rgba(0,0,0, .6);
+
+}
+
+@screen lg {
+    .block-project__inner {
+        @apply min-h-screen;
+    }
+}
+
+/* Image Content */
+
+.block-image-content .image img {
+    display: block;
+    width: 100%;
+}
+
+/* Columns */
+
+.block-columns {
+
+}
+
+@screen md {
+    .block-image-content.right .image {
+        order: 2;
+    }
+    .block-image-content.right .text {
+        order: 1;
+    }
 }

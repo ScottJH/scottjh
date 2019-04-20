@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Form from '../components/forms/Form';
-import Icon from '../components/Icon'
+import Form from './forms/Form';
+import Icon from './Icon'
 
-class Styleguide extends Component {
+class StyledEleme extends Component {
     render() {
         return (
             <div className="styleguide">
@@ -48,6 +48,6 @@ class Styleguide extends Component {
             </div>
         )
     }
-};
+}
 
-export default Styleguide;
+export default StyledEleme;

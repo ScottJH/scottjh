@@ -11,12 +11,20 @@ class Form extends Component {
 
                 <div className="field-group pt-3 pb-3">
                     <h4>Radio Button Choice</h4>
-
-                    <input type="radio" name="radio-choice-1" id="radio-choice-1" tabIndex="2" defaultValue="choice-1" />
-                    <label htmlFor="radio-choice-1">Choice 1</label>
-
-                    <input type="radio" name="radio-choice-2" id="radio-choice-2" tabIndex="3" defaultValue="choice-2" />
-                    <label htmlFor="radio-choice-2">Choice 2</label>
+                    <ul className="input-group">
+                        <li>
+                            <input type="radio" name="test-radio" id="radio-1" value="1"/>
+                            <label htmlFor="radio-1">Item 1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="test-radio" id="radio-2" value="2"/>
+                            <label htmlFor="radio-2">Item 2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="test-radio" id="radio-3" value="3"/>
+                            <label htmlFor="radio-3">Item 3</label>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className="field-group pt-3 pb-3">
@@ -32,7 +40,6 @@ class Form extends Component {
                     <label htmlFor="textarea">Textarea:</label>
                     <textarea rows="8" name="textarea" id="textarea"></textarea>
                 </div>
-
 
                 <div className="field-group pt-3 pb-3">
                     <label>Checkboxes</label>

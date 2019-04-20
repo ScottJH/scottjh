@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>ctrl</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ctrl" transform="translate(7.500000, 4.500000) rotate(-180.000000) translate(-7.500000, -4.500000) translate(-1.000000, -1.000000)" fill="#303030">
+            <path d="M15,10 C14.722,10 14.445,9.884 14.247,9.659 L8,2.519 L1.753,9.659 C1.389,10.075 0.758,10.117 0.342,9.753 C-0.074,9.389 -0.116,8.758 0.248,8.342 L7.248,0.342 C7.438,0.125 7.712,0.001 8.001,0.001 C8.29,0.001 8.564,0.126 8.754,0.342 L15.754,8.342 C16.118,8.758 16.076,9.389 15.66,9.753 C15.47,9.919 15.236,10 15.002,10 L15,10 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
