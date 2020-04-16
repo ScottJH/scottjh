@@ -8,14 +8,17 @@ class Header extends Component {
                 <div className="site-header__inner pt-6 pb-6 pr-3 pl-3 flex mx-auto my-0 max-w-lg items-center justify-between">
                     <Link to="/" className="logo"><h3>ScottJH</h3></Link>
                     <nav className="main-nav">
-                        {/* <ul>
+                        <ul>
                             <li>
+                                <Link to="/privacy">Privacy</Link>
+                            </li>
+                            {/* <li>
                                 <Link to="/styleguide">Styleguide</Link>
                             </li>
                             <li>
                                 <Link to="/blocks">Blocks</Link>
-                            </li>
-                        </ul> */}
+                            </li> */}
+                        </ul>
                     </nav>
                 </div>
             </header>
