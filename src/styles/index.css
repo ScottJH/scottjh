@@ -147,6 +147,10 @@ input[type='checkbox']:checked + label::before {
 }
 /* UI */
 
+code {
+    @apply bg-grey-dark text-white p-4 rounded block;
+}
+
 button,
 .btn,
 input[type='submit'] {

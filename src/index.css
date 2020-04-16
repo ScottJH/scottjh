@@ -597,6 +597,12 @@ textarea::-webkit-input-placeholder {
   opacity: .5;
 }
 
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   color: inherit;
@@ -4168,6 +4174,14 @@ input[type='checkbox']:checked + label::before {
 }
 
 /* UI */
+
+code {
+  background-color: #686963;
+  color: #eee;
+  padding: 1rem;
+  border-radius: .25rem;
+  display: block;
+}
 
 button,
 .btn,
