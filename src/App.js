@@ -4,6 +4,7 @@ import Styleguide from './templates/Styleguide'
 import Blocks from './templates/Blocks'
 import Privacy from './templates/Privacy'
 import Auth from './templates/Auth'
+import InstagramFeed from './templates/Instagram'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -29,6 +30,7 @@ class App extends Component {
                       <Route path="/blocks" component={Blocks} />
                       <Route path="/privacy" component={Privacy} />
                       <Route path="/auth" component={Auth} />
+                      <Route path="/instagram-feed" component={InstagramFeed} />
                       <Route component={NotFound} />
                   </Switch>
                 <Footer />

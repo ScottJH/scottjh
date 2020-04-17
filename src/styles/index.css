@@ -150,6 +150,10 @@ input[type='checkbox']:checked + label::before {
 code {
     @apply bg-grey-dark text-white p-4 rounded block;
     overflow: scroll;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: none;
+    max-width: 100%;
 }
 
 button,

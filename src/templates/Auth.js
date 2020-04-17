@@ -15,7 +15,7 @@ class Auth extends Component {
                         columns = {
                             [
                                 `<p>Copy params below</p>
-                                <pre><code>${search}</code></pre>`
+                                <code>${search}</code>`
                             ]
                         }
                     />
