@@ -39,29 +39,20 @@ class Instagram extends Component {
 
 
     render() {
-      const {igPosts, isLoaded} = this.state;
       
-      if(isLoaded) {
-        return (
-          <div className="wrapper">
-              <Banner title="InstagramFeed Page" />
-              <div className="main-container" role="main">
-                    <InstagramFeed
-                      data={igPosts}
-                  />
-              </div>
-          </div>
-        )
-      } else {
-        return (
-          <div className="wrapper">
-              <Banner title="InstagramFeed Page" />
-              <div className="main-container" role="main">
-                    <p>Loading feed</p>
-              </div>
-          </div>
-        )
-      }
+      const {igPosts, isLoaded} = this.state;
+
+      return (
+        <div className="wrapper">
+            <Banner title="InstagramFeed Page" />
+            <div className="main-container" role="main">
+                {isLoaded 
+                  ?<InstagramFeed data={igPosts} limit={9} /> 
+                  : <p>Loading feed</p> }
+            </div>
+        </div>
+      )
+    
     }
 }
 
