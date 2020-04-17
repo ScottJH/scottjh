@@ -4181,6 +4181,7 @@ code {
   padding: 1rem;
   border-radius: .25rem;
   display: block;
+  overflow: scroll;
 }
 
 button,

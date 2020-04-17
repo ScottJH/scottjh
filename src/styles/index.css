@@ -149,6 +149,7 @@ input[type='checkbox']:checked + label::before {
 
 code {
     @apply bg-grey-dark text-white p-4 rounded block;
+    overflow: scroll;
 }
 
 button,
