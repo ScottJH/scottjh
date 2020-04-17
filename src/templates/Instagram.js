@@ -13,7 +13,10 @@ class Instagram extends Component {
       }
     
       componentDidMount() {
-        fetch("https://graph.instagram.com/me/media?fields=media_url,caption,permalink&access_token=IGQVJXQUhteTVXa2JpVkJtdHZAwU2NMejYwcHhEYURSX21Ob01yR214QUdXZA3hVX2J2V0hzREhQUzFVS2NPVjU3blVpWGpvMnByb2NxdU1YTExubEpxUzB4cGxUb3BZAUncxalhqMmRB")
+
+        const decodedToken = window.atob("SUdRVkpYUVVodGVUVlhhMkpwVmtKdGRIWkF3VTJOTWVqWXdjSGhFWVVSU1gyMU9iMDF5UjIxNFFVZFhaQTNoVlgySjJWMGh6UkVoUVV6RlZTMk5QVmpVM2JsVnBXR3B2TW5CeWIyTnhkVTFZVEV4dWJFcHhVekI0Y0d4VWIzQlpBVW5jeGFsaHFNbVJC");
+
+        fetch("https://graph.instagram.com/me/media?fields=media_url,caption,permalink&access_token=" + decodedToken)
           .then(res => res.json())
           .then(
             (result) => {
