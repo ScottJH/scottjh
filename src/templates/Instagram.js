@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../blocks/Banner.js';
+import Columns from '../blocks/Columns.js';
 import InstagramFeed from '../blocks/InstagramFeed.js';
 
 class Instagram extends Component {
@@ -47,7 +48,13 @@ class Instagram extends Component {
 
       return (
         <div className="wrapper">
-            <Banner title="InstagramFeed Page" />
+            <Banner title="Instagram Feed Page" />
+            <Columns 
+              columns={
+                [
+                  `<p>This is just a little experiment to create a simple Instagram feed for my personal Instagram and learn about the verification process for new Instagram apps.</p>`
+                ]
+              } />
             <div className="main-container" role="main">
                 {isLoaded 
                   ?<InstagramFeed data={igPosts} limit={9} /> 

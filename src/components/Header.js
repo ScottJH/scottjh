@@ -10,6 +10,9 @@ class Header extends Component {
                     <nav className="main-nav">
                         <ul>
                             <li>
+                                <Link to="/instagram-feed">Instagram Feed</Link>
+                            </li>
+                            <li>
                                 <Link to="/privacy">Privacy</Link>
                             </li>
                             {/* <li>
