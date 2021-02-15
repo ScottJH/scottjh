@@ -6,14 +6,14 @@ class Resume extends Component {
     render() {
         return (
             <div className="wrapper">
-                <Banner title="Resume for Scott J Haselwood" />
+                <Banner title="My Links" />
                 <div className="main-container" role="main">
                 <Columns
                     columns = {
                         [
                             `<p><a href="https://my.indeed.com/p/scotth-k1oj6u4" target="_blank" rel="noopener noreferrer" class="btn">View Resume on Indeed</a></p>`,
                             `<p><a href="https://www.linkedin.com/in/scott-haselwood/" target="_blank" rel="noopener noreferrer" class="btn">View My LinkedIn Profile</a></p>`,
-                            `<p><a href="https://my.indeed.com/p/scotth-k1oj6u4" target="_blank" rel="noopener noreferrer" class="btn">View My Etsy Store</a></p>`
+                            `<p><a href="https://www.etsy.com/shop/SJHPress" target="_blank" rel="noopener noreferrer" class="btn">View My Etsy Store</a></p>`
                         ]
                     }
                 />
