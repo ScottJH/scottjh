@@ -12,8 +12,8 @@ class Resume extends Component {
                     columns = {
                         [
                             `<p><a href="https://my.indeed.com/p/scotth-k1oj6u4" target="_blank" rel="noopener noreferrer" class="btn">View Resume on Indeed</a></p>`,
-                            `<p><a href="https://my.indeed.com/p/scotth-k1oj6u4" target="_blank" rel="noopener noreferrer" class="btn">View Resume on Indeed</a></p>`,
-                            `<p><a href="https://my.indeed.com/p/scotth-k1oj6u4" target="_blank" rel="noopener noreferrer" class="btn">View Resume on Indeed</a></p>`
+                            `<p><a href="https://www.linkedin.com/in/scott-haselwood/" target="_blank" rel="noopener noreferrer" class="btn">View My LinkedIn Profile</a></p>`,
+                            `<p><a href="https://my.indeed.com/p/scotth-k1oj6u4" target="_blank" rel="noopener noreferrer" class="btn">View My Etsy Store</a></p>`
                         ]
                     }
                 />
