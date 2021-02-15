@@ -14,7 +14,7 @@ class Home extends Component {
                         content= {
                             [
                                 `<p>My name is Scott J Haselwood. I am a web developer living in Portland, OR. I work for <a href="https://thedaylightstudio.com/" target="_blank">Daylight</a>. Contact me if you want to connect about web development or illustration projects.</p>
-                                <p>You can also, you can check out <a href="/my-links">my links</a>.</p>`
+                                <p>You can also check out <a href="/my-links">my links</a>.</p>`
                             ]
                         }
                     />
