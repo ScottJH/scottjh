@@ -376,7 +376,7 @@ a.logo:hover::after {
     }
     * + h3 ,
     h3 + * {
-        @apply .mt-5;
+        @apply .mt-6;
     }
     h4 {
         @apply .text-xl;

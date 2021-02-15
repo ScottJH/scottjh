@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import Banner from '../blocks/Banner.js';
 
 class Projects extends Component {
-    constructor() {
-
-    }
     render() {
         return (
             <div className="wrapper">

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Home from './templates/Home'
-import Styleguide from './templates/Styleguide'
-import Blocks from './templates/Blocks'
+//import Styleguide from './templates/Styleguide'
+//import Blocks from './templates/Blocks'
 import Privacy from './templates/Privacy'
-import Auth from './templates/Auth'
-import InstagramFeed from './templates/Instagram'
+import Resume from './templates/Resume'
+import MyLinks from './templates/MyLinks'
+//import Auth from './templates/Auth'
+//import InstagramFeed from './templates/Instagram'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -26,11 +28,13 @@ class App extends Component {
                           path="/"
                           exact
                           component={Home} />
-                      <Route path="/styleguide" component={Styleguide} />
-                      <Route path="/blocks" component={Blocks} />
+                      {/* <Route path="/styleguide" component={Styleguide} /> */}
+                      {/* <Route path="/blocks" component={Blocks} /> */}
                       <Route path="/privacy" component={Privacy} />
-                      <Route path="/auth" component={Auth} />
-                      <Route path="/instagram-feed" component={InstagramFeed} />
+                      <Route path="/resume" component={Resume} />
+                      <Route path="/my-links" component={MyLinks} />
+                      {/* <Route path="/auth" component={Auth} /> */}
+                      {/* <Route path="/instagram-feed" component={InstagramFeed} /> */}
                       <Route component={NotFound} />
                   </Switch>
                 <Footer />

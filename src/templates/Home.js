@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Banner, ImageContent, Columns} from '../blocks';
+import {Banner, ImageContent } from '../blocks';
 
 class Home extends Component {
     render() {

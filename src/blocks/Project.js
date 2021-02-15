@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class Project extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const bgImage = this.props.bgImage;
         const projectName = this.props.projectName;
@@ -19,7 +16,7 @@ class Project extends Component {
                                 projectName && <h2>{projectName}</h2>
                             }
                             {
-                                projectLink && <h5><a href={projectLink} target="_blank">View Site</a></h5>
+                                projectLink && <h5><a href={projectLink} target="_blank" rel="noopener noreferrer">View Site</a></h5>
                             }
                             {
                                 projectSummary && <p className="text-4xl">{projectSummary}</p>

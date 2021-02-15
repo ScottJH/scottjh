@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class ImageContent extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const bg = this.props.bg;
         const image = this.props.image;

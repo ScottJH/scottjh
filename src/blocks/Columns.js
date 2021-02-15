@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class Columns extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const columns = this.props.columns;
         const colCount = this.props.columns.length;
