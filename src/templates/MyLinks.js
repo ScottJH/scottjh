@@ -26,6 +26,13 @@ class Resume extends Component {
                         ]
                     }
                 />
+                <Columns
+                    columns = {
+                        [
+                            `<p class="text-center"><a href="https://www.youtube.com/channel/UCndNgBYsFPGsqk27qe1EALQ/videos" target="_blank" rel="noopener noreferrer" class="btn">My YouTube</a></p>`,
+                        ]
+                    }
+                />
                 </div>
             </div>
         )
