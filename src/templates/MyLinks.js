@@ -21,14 +21,7 @@ class Resume extends Component {
                     columns = {
                         [
                             `<p class="text-center"><a href="https://www.instagram.com/scottjhpdx/" target="_blank" rel="noopener noreferrer" class="btn">My Instagram</a></p>`,
-                            `<p class="text-center"><a href="https://twitter.com/Scott_H_PDX" target="_blank" rel="noopener noreferrer" class="btn">My Twitter</a></p>`,
                             `<p class="text-center"><a href="https://github.com/scottjh" target="_blank" rel="noopener noreferrer" class="btn">My Github</a></p>`,
-                        ]
-                    }
-                />
-                <Columns
-                    columns = {
-                        [
                             `<p class="text-center"><a href="https://www.youtube.com/channel/UCndNgBYsFPGsqk27qe1EALQ/videos" target="_blank" rel="noopener noreferrer" class="btn">My YouTube</a></p>`,
                         ]
                     }
