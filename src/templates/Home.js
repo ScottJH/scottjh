@@ -13,7 +13,7 @@ class Home extends Component {
                         heading="Hello!"
                         content= {
                             [
-                                `<p>My name is Scott J Haselwood. I am a web developer living in Portland, OR. I work for <a href="https://thedaylightstudio.com/" target="_blank">Daylight</a>. Contact me if you want to connect about web development or illustration projects.</p>
+                                `<p>My name is Scott J Haselwood. I am a web developer, cartoonist and illustrator living in Portland, OR. I work at <a href="https://www.wearefine.com/" target="_blank">FINE</a>. Contact me if you want to connect about web development or illustration projects.</p>
                                 <p>You can also check out <a href="/my-links">my links</a>.</p>`
                             ]
                         }
