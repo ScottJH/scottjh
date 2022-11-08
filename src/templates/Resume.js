@@ -11,9 +11,15 @@ class Resume extends Component {
                 <Columns
                     columns = {
                         [
-                            `<h3 class="code-line" data-line-start=0 data-line-end=1><a id="Senior_Web_Developer_0"></a>Senior Web Developer</h3>
+                            `<h3 class="code-line" data-line-start=0 data-line-end=1><a id="Front_End_Web_Developer_0"></a>Front-End Web Developer</h3>
+                            <p class="has-line-data" data-line-start="1" data-line-end="3"><strong>FINE - Portland, OR</strong><br>
+                            <em>September 2021 to present</em></p>
+                            <ul>
+                            <li class="has-line-data" data-line-start="3" data-line-end="4">Developed custom sites using Nuxt/Vue for clients in a variety of industries</li>
+                            </ul>
+                            <h3 class="code-line" data-line-start=0 data-line-end=1><a id="Senior_Web_Developer_0"></a>Senior Web Developer</h3>
                             <p class="has-line-data" data-line-start="1" data-line-end="3"><strong>Daylight - Portland, OR</strong><br>
-                            <em>September 2018 to Present</em></p>
+                            <em>September 2018 to 2021</em></p>
                             <ul>
                             <li class="has-line-data" data-line-start="3" data-line-end="4">Developed custom WordPress, Craft, Statistic and Wine Direct sites for clients in a variety of industries</li>
                             <li class="has-line-data" data-line-start="4" data-line-end="11">Clients indlude:
