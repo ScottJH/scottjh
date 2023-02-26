@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Banner, Project, ImageContent, Columns} from '../blocks';
+import {Banner, Project, ImageContent, ImageFull, Columns} from '../blocks';
 
 class Blocks extends Component {
     render() {
@@ -26,7 +26,10 @@ class Blocks extends Component {
                         heading="Events Filtering"
                         content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quo mollitia, magnam numquam ipsa porro commodi iure sit, quaerat accusantium id quasi ducimus inventore dolorem veniam libero qui atque in!"
                     />
-
+                    <ImageFull
+                        image={require('../assets/images/portfolio/illustration/jay-and-dale.jpg')}
+                        imageAlt="Jay Leno and Dale Earnhardt racing"
+                    />
                     <Columns
                         columns = {
                             [

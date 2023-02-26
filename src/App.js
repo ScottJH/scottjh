@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Home from './templates/Home'
 //import Styleguide from './templates/Styleguide'
-//import Blocks from './templates/Blocks'
+import Blocks from './templates/Blocks'
+import Illustration from './templates/Illustration'
 import Privacy from './templates/Privacy'
 import Resume from './templates/Resume'
 import MyLinks from './templates/MyLinks'
@@ -29,7 +30,8 @@ class App extends Component {
                           exact
                           component={Home} />
                       {/* <Route path="/styleguide" component={Styleguide} /> */}
-                      {/* <Route path="/blocks" component={Blocks} /> */}
+                      <Route path="/blocks" component={Blocks} />
+                      <Route path="/illustration" component={Illustration} />
                       <Route path="/privacy" component={Privacy} />
                       <Route path="/resume" component={Resume} />
                       <Route path="/my-links" component={MyLinks} />

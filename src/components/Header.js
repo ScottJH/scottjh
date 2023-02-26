@@ -10,15 +10,18 @@ class Header extends Component {
                     <nav className="main-nav">
                         <ul>
                             <li>
-                                <Link to="/resume">Resume</Link>
+                                <Link to="/resume">Web Dev Resume</Link>
+                            </li>
+                            <li>
+                                <Link to="/illustration">Illustration Portfolio</Link>
                             </li>
                             <li>
                                 <Link to="/my-links">My Links</Link>
                             </li>
                             {/* <li>
                                 <Link to="/styleguide">Styleguide</Link>
-                            </li>
-                            <li>
+                            </li> */}
+                            {/* <li>
                                 <Link to="/blocks">Blocks</Link>
                             </li> */}
                         </ul>
