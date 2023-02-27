@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Banner, ImageFull, Columns } from '../blocks';
+import {Banner, ImageFull, Columns, ImageContent } from '../blocks';
 
 class Illustration extends Component {
     render() {
@@ -10,7 +10,7 @@ class Illustration extends Component {
                     columns = {
                         [
                             `<h2>Editorail Cartoons for Linkage Mag</h2>`,
-                            `<p>Since January, 2021, I have been creating humorous cartoons for Jay Leno's "Funny That You Ask" column in <a href="https://linkagemag.com/" target="_blank">Linkage Mag</a>. Below are a selection of my favorites.</p>`
+                            `<p>Since January, 2021, I have been creating humorous cartoons for Jay Leno's "Funny That You Ask" column in <a href="https://linkagemag.com/" target="_blank">Linkage Mag</a>. Below are a selection of my favorites. All of these were done digitally using Clip Studio Paint.</p>`
                         ]
                     }
                 />
@@ -30,15 +30,116 @@ class Illustration extends Component {
                     image={require('../assets/images/portfolio/illustration/jay-and-dale.jpg')}
                     imageAlt="Jay Leno and Dale Earnhardt racing"
                 />
-                {/* <ImageFull
-                    image={require('../assets/images/portfolio/illustration/jay-chrysler-imperial.jpg')}
-                    imageAlt="Jay Leno discovering a Chrysler Imperial in a garage"
+                <Columns
+                    columns = {
+                        [
+                            `<h2>Wrestling Fan Art</h2>`,
+                            `<p>In 2022 I participated in the WRESTLETOBER drawing challenge. In 2023, I'll be releasing a zine of these drawings. Here are some of my favorites. All drawings done on paper using pencil and ink.</p>`
+                        ]
+                    }
                 />
-                <ImageFull
-                    image={require('../assets/images/portfolio/illustration/linkage-009.jpg')}
-                    imageAlt="Jay Leno give a kid a ride in a Lamborghini"
-                /> */}
+                <ImageContent
+                    bg="grey"
+                    imageSide="left"
+                    image={require('../assets/images/portfolio/illustration/stone-cold.jpg')}
+                    heading="Stone Cold Steve Austin"
+                    imageAlt="Stone Cold Steve Austin"
+                />
                 
+                <ImageContent
+                    imageSide="right"
+                    image={require('../assets/images/portfolio/illustration/butcher-blade-bunny.jpg')}
+                    heading="The Butcher, the Blade and the Bunny"
+                    imageAlt="The Butcher, the Blade and the Bunny"
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="left"
+                    image={require('../assets/images/portfolio/illustration/dr-britt-baker-dmd.jpg')}
+                    heading="Dr.Britt Baker D.M.D."
+                    imageAlt="Dr.Britt Baker D.M.D."
+                />
+                <ImageContent
+                    imageSide="right"
+                    image={require('../assets/images/portfolio/illustration/macho-man.jpg')}
+                    heading="Macho Man Randy Savage"
+                    imageAlt="Macho Man Randy Savage"
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="left"
+                    image={require('../assets/images/portfolio/illustration/bret-hart.jpg')}
+                    heading="Bret the Hitman Hart"
+                    imageAlt="Bret the Hitman Hart"
+                />
+                <ImageContent
+                    imageSide="right"
+                    image={require('../assets/images/portfolio/illustration/thunder-liger.jpg')}
+                    heading="Jushin Thunder Liger"
+                    imageAlt="Jushin Thunder Liger"
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="left"
+                    image={require('../assets/images/portfolio/illustration/thunder-rosa.jpg')}
+                    heading="Thunder Rosa"
+                    imageAlt="Thunder Rosa"
+                />
+                <Columns
+                    columns = {
+                        [
+                            `<h2>Dune Fan Art</h2>`,
+                            `<p>In 2020 I participated in the DUNETOBER drawing challenge. In 2021, I self-published zine of these drawings. Here are some of my favorites. All drawings done on paper using pencil and ink.</p>`
+                        ]
+                    }
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="left"
+                    image={require('../assets/images/portfolio/illustration/Muadib.jpg')}
+                    heading="Muadib"
+                    imageAlt="Muadib"
+                />
+                <ImageContent
+                    imageSide="right"
+                    image={require('../assets/images/portfolio/illustration/Alia-of-the-Knife.jpg')}
+                    heading="Alia of the Knife"
+                    imageAlt="Alia of the Knife"
+                />
+`               <ImageContent
+                    imageSide="left"
+                    image={require('../assets/images/portfolio/illustration/Chani.jpg')}
+                    heading="Chani"
+                    imageAlt="Chani"
+                />
+                <ImageContent
+                    imageSide="right"
+                    image={require('../assets/images/portfolio/illustration/Paul.jpg')}
+                    heading="Paul"
+                    imageAlt="Paul"
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="left"
+                    image={require('../assets/images/portfolio/illustration/Sardukar.jpg')}
+                    heading="Sardukar"
+                    imageAlt="Sardukar"
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="right"
+                    image={require('../assets/images/portfolio/illustration/Blind-Preacher.jpg')}
+                    heading="The Blind Preacher"
+                    imageAlt="The Blind Preacher"
+                />
+                <Columns
+                    columns = {
+                        [
+                            `<h2>Sketches</h2>`,
+                            `<p>Coming soon...</p>`
+                        ]
+                    }
+                />
             </div>
         )
     }
