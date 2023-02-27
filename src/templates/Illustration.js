@@ -106,7 +106,7 @@ class Illustration extends Component {
                     heading="Alia of the Knife"
                     imageAlt="Alia of the Knife"
                 />
-`               <ImageContent
+               <ImageContent
                     imageSide="left"
                     image={require('../assets/images/portfolio/illustration/Chani.jpg')}
                     heading="Chani"

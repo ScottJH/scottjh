@@ -4388,12 +4388,6 @@ a.logo:hover::after {
   margin-top: 0;
 }
 
-.site-header nav ul {
-  display: -webkit-box;
-  display: flex;
-  padding: 0;
-}
-
 .site-header nav ul li {
   margin: 0;
   list-style-type: none;

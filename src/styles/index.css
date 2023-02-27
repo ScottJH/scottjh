@@ -449,11 +449,25 @@ a.logo:hover::after {
 
 }
 
+.block-image-content .image {
+    order: 2;
+}
+.block-image-content .text {
+    order: 1;
+}
+
 @screen md {
     .block-image-content.right .image {
         order: 2;
     }
     .block-image-content.right .text {
         order: 1;
+    }
+
+    .block-image-content.left .image {
+        order: 1;
+    }
+    .block-image-content.left .text {
+        order: 2;
     }
 }
