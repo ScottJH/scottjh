@@ -10,6 +10,21 @@ class Illustration extends Component {
                 <Columns
                     columns = {
                         [
+                            `<h2>Star Wrasslin Issue #1</h2>`,
+                            `<p>My sci-fi pro-wrestling anthology <a href="https://www.dropbox.com/scl/fi/sdaexsv2chddehll2m1bu/Star-Wrasslin-Issue-1.pdf?rlkey=imaer31xkdx5ck78kckl6zpq0&dl=0" target="_blank">STAR WRASSLIN #1</a> and you can be read for free here.</p>`
+                        ]
+                    }
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="left"
+                    image={require('../assets/images/for-social-Front Cover -reduce.jpg')}
+                    heading="Star Wrasslin Issue 1"
+                    imageAlt="Star Wrasslin Issue 1 Cover"
+                />
+                {/* <Columns
+                    columns = {
+                        [
                             `<h2>Escape From Wrestle Planet</h2>`,
                             `<p>I recently wrote and drew a short sci-fi wrestling story called <a href="https://www.dropbox.com/s/1ecfvgq05shh5ko/escape-from-wrestle-planet-layout.pdf?dl=0" target="_blank">ESCAPE FROM WRESTLE PLANET</a> and you can read it for free here.</p>`
                         ]
@@ -21,7 +36,7 @@ class Illustration extends Component {
                     image={require('../assets/images/escape-from-wrestle-planet-preview.jpg')}
                     heading="Escape From Wrestle Planet - Page 5 Preview Image"
                     imageAlt="Escape From Wrestle Planet"
-                />
+                /> */}
                 <Columns
                     columns = {
                         [
