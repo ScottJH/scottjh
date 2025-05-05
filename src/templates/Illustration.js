@@ -22,21 +22,43 @@ class Illustration extends Component {
                     heading="Star Wrasslin Issue 1"
                     imageAlt="Star Wrasslin Issue 1 Cover"
                 />
-                {/* <Columns
+                <Columns
                     columns = {
                         [
-                            `<h2>Escape From Wrestle Planet</h2>`,
-                            `<p>I recently wrote and drew a short sci-fi wrestling story called <a href="https://www.dropbox.com/s/1ecfvgq05shh5ko/escape-from-wrestle-planet-layout.pdf?dl=0" target="_blank">ESCAPE FROM WRESTLE PLANET</a> and you can read it for free here.</p>`
+                            `<h2>Star Wrasslin Issue #2</h2>`,
+                            `<p>Issue #2 coming in 2025</p>`
+                        ]
+                    }
+                />
+                <Columns
+                    columns = {
+                        [
+                            `<h2>Stickers</h2>`,
+                            `<p>I've been messing around some sticker designs. Available 2025.</p>`
                         ]
                     }
                 />
                 <ImageContent
                     bg="grey"
                     imageSide="left"
-                    image={require('../assets/images/escape-from-wrestle-planet-preview.jpg')}
-                    heading="Escape From Wrestle Planet - Page 5 Preview Image"
-                    imageAlt="Escape From Wrestle Planet"
-                /> */}
+                    image={require('../assets/images/portfolio/illustration/Ever_Lovin.jpg')}
+                    heading="Ever Lovin"
+                    imageAlt="Ever Lovin"
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="right"
+                    image={require('../assets/images/portfolio/illustration/Hard_Times_Dusty_Rhodes.jpg')}
+                    heading="Hard Times"
+                    imageAlt="Hard Times"
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="left"
+                    image={require('../assets/images/portfolio/illustration/Robots_In_Disguise.jpg')}
+                    heading="Robots in Disguise"
+                    imageAlt="Robots in Disguise"
+                />
                 <Columns
                     columns = {
                         [
