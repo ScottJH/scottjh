@@ -56,7 +56,7 @@ class Illustration extends Component {
                     bg="grey"
                     imageSide="left"
                     image={require('../assets/images/portfolio/illustration/Ever_Lovin.jpg')}
-                    heading="Ever Lovin"
+                    heading="Ever Lovin'"
                     imageAlt="Ever Lovin"
                 />
                 <ImageContent
