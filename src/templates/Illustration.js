@@ -6,7 +6,14 @@ class Illustration extends Component {
         return (
             <div class="wrapper">
                 <Banner title="Cartoonist and Illustrator"/>
-                
+                <Columns
+                    columns = {
+                        [
+                            `<h2>Fatal Four Pager Flipbook</h2>`,
+                            `<p>Two new STAR WRASSLIN stories you can print yourself as a flipbook: <a href="https://www.dropbox.com/scl/fi/5tkxuydwfjtib4qps64rm/Fatal-4-Pager-Flip-Book.pdf?rlkey=uyrnvr8qr780pjra2mj420o6m&dl=0" target="_blank">Download</a>.</p>`
+                        ]
+                    }
+                />
                 <Columns
                     columns = {
                         [
