@@ -41,9 +41,16 @@ class Illustration extends Component {
                     columns = {
                         [
                             `<h2>Stickers</h2>`,
-                            `<p>I've been messing around some sticker designs. Available 2025.</p>`
+                            `<p>I've been messing around with some sticker designs. Available 2025.</p>`
                         ]
                     }
+                />
+                <ImageContent
+                    bg="grey"
+                    imageSide="right"
+                    image={require('../assets/images/portfolio/illustration/The_Horrors_Persist.jpg')}
+                    heading="The Horrors Persist"
+                    imageAlt="The Horrors Persist"
                 />
                 <ImageContent
                     bg="grey"
